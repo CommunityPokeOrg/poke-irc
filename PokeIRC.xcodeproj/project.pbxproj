@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25D18D19BAACE8A012A04E40 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CF5945028FCD4F0AA6D6F0 /* Models.swift */; };
+		31F2E5564E005075AF8A48D3 /* ThemeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445593577E1425E0C3D562E9 /* ThemeEngine.swift */; };
+		3E90338E2BFCF7A5DB604F76 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C01FB0BEF68AF5C4BE90270 /* AppStore.swift */; };
+		3FC55B8E7AEEC78125B5AF77 /* PokeIRCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027DA656C2E6263A4E002BF0 /* PokeIRCApp.swift */; };
+		424A56B41DAF0D6C17BCC7FE /* ChatLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8B5EA37AC10308BEB1D2E9 /* ChatLogView.swift */; };
+		4F998298A4D9B8DE229F7E77 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E0F774F2EE663EDF290E04 /* SettingsView.swift */; };
+		5B9EEA73B49A7BB14ED523B5 /* NativeChatLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737C571D8EAFB097F7641C10 /* NativeChatLogView.swift */; };
+		6AF89330AFC4CE18DEF2C2BF /* Themes in Resources */ = {isa = PBXBuildFile; fileRef = C348B3477E2BAECA4929A4D2 /* Themes */; };
+		76B9409F234062B855727AC4 /* WebChatLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E4D44EF48CBD288D5BA35 /* WebChatLogView.swift */; };
+		9C70E0DB9C274FB9676843CD /* ServerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4161CCB660C39FB45DD4A2 /* ServerConnection.swift */; };
+		A1E65A2EFFFE91C7916CA449 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE6267F1C0F7AD27706DC41 /* ContentView.swift */; };
+		C5E413F924872DB3C7623A27 /* ServerEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D030EF983CC81EB7194672EF /* ServerEditorView.swift */; };
+		DAA4A8B6376F9580C17F3E83 /* IRCKit in Frameworks */ = {isa = PBXBuildFile; productRef = D24EDABF8AB7CCE4EDF47FC1 /* IRCKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		027DA656C2E6263A4E002BF0 /* PokeIRCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeIRCApp.swift; sourceTree = "<group>"; };
+		1A4161CCB660C39FB45DD4A2 /* ServerConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConnection.swift; sourceTree = "<group>"; };
+		3C01FB0BEF68AF5C4BE90270 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		445593577E1425E0C3D562E9 /* ThemeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeEngine.swift; sourceTree = "<group>"; };
+		4617BD8C59FBB8F1D5A0B9F7 /* PokeIRC.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PokeIRC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DE6267F1C0F7AD27706DC41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		737C571D8EAFB097F7641C10 /* NativeChatLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeChatLogView.swift; sourceTree = "<group>"; };
+		7A8B5EA37AC10308BEB1D2E9 /* ChatLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogView.swift; sourceTree = "<group>"; };
+		97E0F774F2EE663EDF290E04 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B7CF5945028FCD4F0AA6D6F0 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		C348B3477E2BAECA4929A4D2 /* Themes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Themes; path = PokeIRC/Themes; sourceTree = SOURCE_ROOT; };
+		D030EF983CC81EB7194672EF /* ServerEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerEditorView.swift; sourceTree = "<group>"; };
+		E28E4D44EF48CBD288D5BA35 /* WebChatLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebChatLogView.swift; sourceTree = "<group>"; };
+		F8A9E88ED51F5DB28FBDE75F /* IRCKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = IRCKit; path = IRCKit; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D45A456E09A30949AF1E62EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA4A8B6376F9580C17F3E83 /* IRCKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		148F6A483646DE953E173990 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6DE6267F1C0F7AD27706DC41 /* ContentView.swift */,
+				D030EF983CC81EB7194672EF /* ServerEditorView.swift */,
+				97E0F774F2EE663EDF290E04 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2A06C8E1C9AA63531E3D1966 /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				7A8B5EA37AC10308BEB1D2E9 /* ChatLogView.swift */,
+				737C571D8EAFB097F7641C10 /* NativeChatLogView.swift */,
+				445593577E1425E0C3D562E9 /* ThemeEngine.swift */,
+				E28E4D44EF48CBD288D5BA35 /* WebChatLogView.swift */,
+			);
+			path = Rendering;
+			sourceTree = "<group>";
+		};
+		3A71C8920E62F7694C4A8DA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4617BD8C59FBB8F1D5A0B9F7 /* PokeIRC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84E92D17915CF5EE0428672F /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				F8A9E88ED51F5DB28FBDE75F /* IRCKit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		89D8E86CC5A70D164ADED5C7 = {
+			isa = PBXGroup;
+			children = (
+				84E92D17915CF5EE0428672F /* Packages */,
+				FB45996EF3F8BE502119C3DE /* PokeIRC */,
+				3A71C8920E62F7694C4A8DA0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB45996EF3F8BE502119C3DE /* PokeIRC */ = {
+			isa = PBXGroup;
+			children = (
+				3C01FB0BEF68AF5C4BE90270 /* AppStore.swift */,
+				B7CF5945028FCD4F0AA6D6F0 /* Models.swift */,
+				027DA656C2E6263A4E002BF0 /* PokeIRCApp.swift */,
+				1A4161CCB660C39FB45DD4A2 /* ServerConnection.swift */,
+				C348B3477E2BAECA4929A4D2 /* Themes */,
+				2A06C8E1C9AA63531E3D1966 /* Rendering */,
+				148F6A483646DE953E173990 /* Views */,
+			);
+			path = PokeIRC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FA5BEC93DD492B13DFCCA14 /* PokeIRC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0F41FAA670D42AB95F7066E /* Build configuration list for PBXNativeTarget "PokeIRC" */;
+			buildPhases = (
+				449C4BF72EB506EB12AD1682 /* Sources */,
+				ACA6CA257C90410D4B5FD7D7 /* Resources */,
+				D45A456E09A30949AF1E62EF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PokeIRC;
+			packageProductDependencies = (
+				D24EDABF8AB7CCE4EDF47FC1 /* IRCKit */,
+			);
+			productName = PokeIRC;
+			productReference = 4617BD8C59FBB8F1D5A0B9F7 /* PokeIRC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8A7831F2AAF56565496A242 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2FA5BEC93DD492B13DFCCA14 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 777055CAF363C8802C6702CF /* Build configuration list for PBXProject "PokeIRC" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 89D8E86CC5A70D164ADED5C7;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0D5DC4D2FF10F0634EDDA981 /* XCLocalSwiftPackageReference "IRCKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3A71C8920E62F7694C4A8DA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FA5BEC93DD492B13DFCCA14 /* PokeIRC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACA6CA257C90410D4B5FD7D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AF89330AFC4CE18DEF2C2BF /* Themes in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		449C4BF72EB506EB12AD1682 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E90338E2BFCF7A5DB604F76 /* AppStore.swift in Sources */,
+				424A56B41DAF0D6C17BCC7FE /* ChatLogView.swift in Sources */,
+				A1E65A2EFFFE91C7916CA449 /* ContentView.swift in Sources */,
+				25D18D19BAACE8A012A04E40 /* Models.swift in Sources */,
+				5B9EEA73B49A7BB14ED523B5 /* NativeChatLogView.swift in Sources */,
+				3FC55B8E7AEEC78125B5AF77 /* PokeIRCApp.swift in Sources */,
+				9C70E0DB9C274FB9676843CD /* ServerConnection.swift in Sources */,
+				C5E413F924872DB3C7623A27 /* ServerEditorView.swift in Sources */,
+				4F998298A4D9B8DE229F7E77 /* SettingsView.swift in Sources */,
+				31F2E5564E005075AF8A48D3 /* ThemeEngine.swift in Sources */,
+				76B9409F234062B855727AC4 /* WebChatLogView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8FDA2F4CDBB9C14F8C6186FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PokeIRC;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSHumanReadableCopyright = CommunityPoke;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.communitypoke.PokeIRC;
+				PRODUCT_NAME = PokeIRC;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9AF9386D71D5DCAAFB36A443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EE322204AE208ED686FC3EBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PokeIRC;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSHumanReadableCopyright = CommunityPoke;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.communitypoke.PokeIRC;
+				PRODUCT_NAME = PokeIRC;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0679EA42FBA513C534A67C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		777055CAF363C8802C6702CF /* Build configuration list for PBXProject "PokeIRC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0679EA42FBA513C534A67C7 /* Debug */,
+				9AF9386D71D5DCAAFB36A443 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F0F41FAA670D42AB95F7066E /* Build configuration list for PBXNativeTarget "PokeIRC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE322204AE208ED686FC3EBE /* Debug */,
+				8FDA2F4CDBB9C14F8C6186FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		0D5DC4D2FF10F0634EDDA981 /* XCLocalSwiftPackageReference "IRCKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = IRCKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D24EDABF8AB7CCE4EDF47FC1 /* IRCKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IRCKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D8A7831F2AAF56565496A242 /* Project object */;
+}

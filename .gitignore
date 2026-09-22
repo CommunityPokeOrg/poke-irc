@@ -1,0 +1,6 @@
+.DS_Store
+*.xcuserstate
+xcuserdata/
+DerivedData/
+.build/
+PokeIRC.xcodeproj/project.xcworkspace/xcuserdata/

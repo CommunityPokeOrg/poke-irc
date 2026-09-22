@@ -1,0 +1,46 @@
+/* PokeIRC default theme — dark, IRC-classic. */
+
+.msg {
+  padding: 1px 0;
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+}
+
+.ts {
+  color: #5c6370;
+  font-size: 0.8em;
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+}
+
+.nick {
+  font-weight: 600;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.nick:hover { text-decoration: underline; }
+
+.kind-join, .kind-part, .kind-quit,
+.kind-nick, .kind-mode, .kind-kick,
+.kind-system {
+  color: #8b949e;
+  font-style: italic;
+}
+
+.kind-notice { color: #d29922; }
+
+.kind-action { color: #a5d6a7; }
+
+.kind-error { color: #f85149; font-weight: 600; }
+
+.highlight, .kind-highlight {
+  background: rgba(210, 153, 34, 0.18);
+  border-left: 3px solid #d29922;
+  padding-left: 6px;
+  margin-left: -9px;
+}
+
+.self .nick { opacity: 0.75; }
+
+.kind-topic { color: #79c0ff; }

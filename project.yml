@@ -1,0 +1,74 @@
+name: PokeIRC
+options:
+  bundleIdPrefix: org.communitypoke
+  deploymentTarget:
+    iOS: "17.0"
+    macOS: "14.0"
+  createIntermediateGroups: true
+
+packages:
+  IRCKit:
+    path: IRCKit
+
+targets:
+  PokeIRC:
+    type: application
+    platform: iOS
+    sources:
+      - path: PokeIRC
+        excludes:
+          - "Themes/**"
+      - path: PokeIRC/Themes
+        type: folder
+        buildPhase: resources
+    dependencies:
+      - package: IRCKit
+        product: IRCKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.communitypoke.PokeIRC
+        PRODUCT_NAME: PokeIRC
+        SDKROOT: auto
+        SUPPORTED_PLATFORMS: "iphoneos iphonesimulator macosx"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SUPPORTS_MACCATALYST: NO
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
+        SWIFT_VERSION: "6.0"
+        SWIFT_STRICT_CONCURRENCY: complete
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.social-networking
+        INFOPLIST_KEY_CFBundleDisplayName: PokeIRC
+        INFOPLIST_KEY_NSHumanReadableCopyright: "CommunityPoke"
+        MARKETING_VERSION: 0.1.0
+        CURRENT_PROJECT_VERSION: 1
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGN_IDENTITY: "-"
+        ENABLE_HARDENED_RUNTIME[sdk=macosx*]: YES
+        LD_RUNPATH_SEARCH_PATHS:
+          - "$(inherited)"
+          - "@executable_path/Frameworks"
+          - "@executable_path/../Frameworks"
+      configs:
+        Debug:
+          SWIFT_OPTIMIZATION_LEVEL: "-Onone"
+        Release:
+          SWIFT_OPTIMIZATION_LEVEL: "-O"
+
+schemes:
+  PokeIRC:
+    build:
+      targets:
+        PokeIRC: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: false
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release

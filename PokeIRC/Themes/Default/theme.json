@@ -1,0 +1,8 @@
+{
+  "id": "default",
+  "name": "Poke Default",
+  "version": "1.0",
+  "author": "CommunityPoke",
+  "css": "chat.css",
+  "js": "chat.js"
+}
