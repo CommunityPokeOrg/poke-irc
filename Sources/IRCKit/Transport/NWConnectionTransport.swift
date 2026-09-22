@@ -35,11 +35,11 @@ public final class NWConnectionTransport: IRCTransport, @unchecked Sendable {
             guard let self else { return }
             switch state {
             case .failed(let error):
-                self.fail(.connectFailed(error.localizedDescription))
+                self.fail(IRCError.connectFailed(error.localizedDescription))
             case .cancelled:
                 self.finishStream()
             case .waiting(let error):
-                self.fail(.connectFailed(error.localizedDescription))
+                self.fail(IRCError.connectFailed(error.localizedDescription))
             default:
                 break
             }
@@ -58,7 +58,7 @@ public final class NWConnectionTransport: IRCTransport, @unchecked Sendable {
                 }
             }
             if let error {
-                self.fail(.transportClosed)
+                self.fail(IRCError.transportClosed)
                 _ = error
                 return
             }
