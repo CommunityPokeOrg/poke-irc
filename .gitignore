@@ -1,0 +1,14 @@
+# SwiftPM
+.build/
+.swiftpm/
+Package.resolved
+
+# Xcode
+*.xcodeproj/
+!project.yml
+xcuserdata/
+*.xcuserstate
+DerivedData/
+
+# OS noise
+.DS_Store

@@ -1,0 +1,58 @@
+name: PokeIRC
+options:
+  bundleIdPrefix: org.communitypoke
+  createIntermediateGroups: true
+
+packages:
+  IRCKit:
+    path: .
+
+targets:
+  PokeIRC:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: App
+    dependencies:
+      - package: IRCKit
+        product: IRCKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.communitypoke.poke-irc
+        PRODUCT_NAME: PokeIRC
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        SWIFT_VERSION: "6.0"
+        MARKETING_VERSION: "0.1.0"
+        CURRENT_PROJECT_VERSION: "1"
+
+  PokeIRCMac:
+    type: application
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: App
+    dependencies:
+      - package: IRCKit
+        product: IRCKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.communitypoke.poke-irc.mac
+        PRODUCT_NAME: PokeIRC
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: "6.0"
+        MARKETING_VERSION: "0.1.0"
+        CURRENT_PROJECT_VERSION: "1"
+
+schemes:
+  PokeIRC:
+    build:
+      targets:
+        PokeIRC: all
+  PokeIRCMac:
+    build:
+      targets:
+        PokeIRCMac: all
